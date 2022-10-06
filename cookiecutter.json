@@ -1,0 +1,7 @@
+{
+    "project_name": "project_name",
+    "app_name": "app_name",
+    "directory_name": "directory_name",
+    "endpoint_name": "endpoint_name",
+    "endpoint_class": "endpoint_class"
+}

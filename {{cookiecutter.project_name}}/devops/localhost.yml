@@ -1,0 +1,29 @@
+version: '3.5'
+
+networks:
+  {{cookiecutter.app_name}}:
+    external: false
+
+services:
+
+  pg-{{cookiecutter.app_name}}-localhost:
+    image: "postgres:14.2"
+    container_name: pg-{{cookiecutter.app_name}}-localhost
+    ports:
+      - "5455:5432"
+    environment:
+      - POSTGRES_USER=Finkargo
+      - POSTGRES_PASSWORD=Finkargo
+      - POSTGRES_DB={{cookiecutter.app_name}}
+      - DEBUG=True
+    restart: always
+    networks:
+      - {{cookiecutter.app_name}}
+
+  redis-{{cookiecutter.app_name}}-localhost:
+    image: "redis:latest"
+    container_name: redis-{{cookiecutter.app_name}}-localhost
+    ports:
+      - 6378:6379
+    networks:
+      - {{cookiecutter.app_name}}

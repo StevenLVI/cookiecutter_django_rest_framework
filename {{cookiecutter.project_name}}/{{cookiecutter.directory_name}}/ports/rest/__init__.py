@@ -1,0 +1,1 @@
+from .{{cookiecutter.endpoint_name}} import {{cookiecutter.endpoint_class}}ViewSet
