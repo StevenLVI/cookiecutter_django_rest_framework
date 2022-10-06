@@ -12,8 +12,8 @@ services:
     ports:
       - "5455:5432"
     environment:
-      - POSTGRES_USER=Finkargo
-      - POSTGRES_PASSWORD=Finkargo
+      - POSTGRES_USER={{cookiecutter.app_name}}
+      - POSTGRES_PASSWORD={{cookiecutter.app_name}}
       - POSTGRES_DB={{cookiecutter.app_name}}
       - DEBUG=True
     restart: always

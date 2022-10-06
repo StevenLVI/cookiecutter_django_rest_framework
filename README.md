@@ -1,8 +1,8 @@
-# cookiecutter_django
+# cookiecutter_django_rest_framework
 
-Este repositorio se tomara como témplate para los proyectos que se deban desarrollar en Django rest-framework, contiene la estructura básica del proyecto en la cual encontraras conexión a base de datos SQL, configuración y conexión a Redis, configuración y conexión a Celery (Worker y Beat).
+Este repositorio servira como témplate para los proyectos que se deban desarrollar en Django rest-framework, contiene la estructura básica del proyecto en la cual encontraras conexión a base de datos SQL, configuración y conexión a Redis, configuración y conexión a Celery (Worker y Beat).
 
-Para realizar uso del template se debe realizar los siguientes pasos: 
+Para realizar uso del template se debe realizar los siguientes pasos:
 
 1.	Instalar cookiecutter
 
@@ -10,7 +10,7 @@ Para realizar uso del template se debe realizar los siguientes pasos:
 
 2.	Ejecutar el comando de cookiecutter con el link del template
 
-`cookiecutter git@gitlab.com:f3315/team-backend/cookiecutter_django.git`
+`cookiecutter https://github.com/StevenLVI/cookiecutter_django_rest_framework.git`
 
 3.	Configurar las variables que solicita cookiecutter
 

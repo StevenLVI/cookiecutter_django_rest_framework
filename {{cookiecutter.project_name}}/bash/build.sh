@@ -1,5 +1,5 @@
 # docker build settings
-IMAGE_LABEL="finkargo/msa_{{cookiecutter.app_name}}"
+IMAGE_LABEL="msa_{{cookiecutter.app_name}}"
 BRANCHNAME="$([ -z "$1"] && echo localhost || echo $1)"
 LATEST_TAG="${BRANCHNAME}-latest"
 IMAGE_LABEL_LATEST="${IMAGE_LABEL}:${LATEST_TAG}"
