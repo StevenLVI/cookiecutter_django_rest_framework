@@ -1,4 +1,0 @@
-include:
-  - project: "f3315/team-cloud/ci-cd/cicd-backend"
-    ref: "main"
-    file: ".gitlab-ci.yml"
